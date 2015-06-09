@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Project.Data.Models.NavigationItem>
+
+<ul class="dropdown-menu">
+    @foreach (var item in Model)
+    {
+        <li>
+            @if (item.Children.Any())
+            {
+                <a href="@item.Url">@item.Description <span class="caret"></span></a>
+                @Html.Action("PopulateNavigationSubItems", "Navigation", new { collection = item.Children })
+            }
+            else
+            {
+                <a href="@item.Url">@item.Description</a>
+            }
+        </li>
+    }
+</ul>

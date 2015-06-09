@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{019023DC-16E1-4232-A2A9-322ED75D9381}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project.WebForms</RootNamespace>
+    <AssemblyName>Project.WebForms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WebGreaseLibPath>..\..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="ExternalLibraries\smartmenus\addons\bootstrap\jquery.smartmenus.bootstrap.css" />
+    <Content Include="ExternalLibraries\smartmenus\addons\bootstrap\jquery.smartmenus.bootstrap.js" />
+    <Content Include="ExternalLibraries\smartmenus\addons\bootstrap\jquery.smartmenus.bootstrap.min.js" />
+    <Content Include="ExternalLibraries\smartmenus\addons\keyboard\jquery.smartmenus.keyboard.js" />
+    <Content Include="ExternalLibraries\smartmenus\addons\keyboard\jquery.smartmenus.keyboard.min.js" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-blue\sm-blue.css" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-clean\sm-clean.css" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-core-css.css" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-mint\sm-mint.css" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-simple\sm-simple.css" />
+    <Content Include="ExternalLibraries\smartmenus\demo\bootstrap-navbar-fixed-bottom.html" />
+    <Content Include="ExternalLibraries\smartmenus\demo\bootstrap-navbar-fixed-top.html" />
+    <Content Include="ExternalLibraries\smartmenus\demo\bootstrap-navbar-static-top.html" />
+    <Content Include="ExternalLibraries\smartmenus\demo\bootstrap-navbar.html" />
+    <Content Include="ExternalLibraries\smartmenus\demo\index.html" />
+    <Content Include="ExternalLibraries\smartmenus\demo\keyboard-navigation.html" />
+    <Content Include="ExternalLibraries\smartmenus\jquery.smartmenus.js" />
+    <Content Include="ExternalLibraries\smartmenus\jquery.smartmenus.min.js" />
+    <Content Include="ExternalLibraries\smartmenus\libs\demo-assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="ExternalLibraries\smartmenus\libs\demo-assets\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ExternalLibraries\smartmenus\libs\demo-assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="ExternalLibraries\smartmenus\libs\demo-assets\demo.css" />
+    <Content Include="ExternalLibraries\smartmenus\libs\demo-assets\readme.txt" />
+    <Content Include="ExternalLibraries\smartmenus\libs\demo-assets\shjs\shjs.css" />
+    <Content Include="ExternalLibraries\smartmenus\libs\demo-assets\shjs\shjs.js" />
+    <Content Include="ExternalLibraries\smartmenus\libs\demo-assets\themes-switcher.js" />
+    <Content Include="ExternalLibraries\smartmenus\libs\jquery\jquery.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-blue\_mixins.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-blue\_sm-blue.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-blue\mixins\_round-corners-last-item.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-blue\mixins\_sub-items-indentation.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-blue\sm-blue.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-clean\_mixins.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-clean\_sm-clean.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-clean\mixins\_round-corners-last-item.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-clean\mixins\_sub-items-indentation.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-clean\sm-clean.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-mint\_mixins.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-mint\_sm-mint.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-mint\mixins\_sub-items-indentation.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-mint\sm-mint.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-simple\_mixins.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-simple\_sm-simple.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-simple\mixins\_sub-items-indentation.scss" />
+    <Content Include="ExternalLibraries\smartmenus\css\sm-simple\sm-simple.scss" />
+    <Content Include="ExternalLibraries\smartmenus\libs\demo-assets\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="ExternalLibraries\smartmenus\libs\demo-assets\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="ExternalLibraries\smartmenus\libs\demo-assets\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="ExternalLibraries\smartmenus\libs\demo-assets\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="ExternalLibraries\smartmenus\LICENSE-MIT" />
+    <Content Include="ExternalLibraries\smartmenus\README.md" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Site.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Site.Mobile.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Project.Common\Project.Common.csproj">
+      <Project>{8a096e9b-f761-4ed5-8474-10144ecafdf8}</Project>
+      <Name>Project.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\Project.Data.Common\Project.Data.Common.csproj">
+      <Project>{95b2e0f9-ec0d-4a79-9f10-23ad6f9d40dd}</Project>
+      <Name>Project.Data.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\Project.Data.Models\Project.Data.Models.csproj">
+      <Project>{8bcd1f10-306d-4e86-a606-8599f2706547}</Project>
+      <Name>Project.Data.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\Project.Data\Project.Data.csproj">
+      <Project>{5f37d174-b336-4275-95c0-303c03acd241}</Project>
+      <Name>Project.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>23343</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:23343/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
