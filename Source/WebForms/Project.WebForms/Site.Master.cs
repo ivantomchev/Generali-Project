@@ -13,7 +13,7 @@
     public partial class SiteMaster : MasterPage
     {
         private static ApplicationDbContext context = new ApplicationDbContext();
-        private readonly ProjectData Data = new ProjectData(context);
+        private ProjectData Data = new ProjectData(context);
 
         public IQueryable<NavigationItem> GetData()
         {
